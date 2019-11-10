@@ -3,9 +3,9 @@ library(randomForestSRC)
 library(survival)
 
 FILEPATH = "PatientData.csv"
-Pati.df = read.csv(FILEPATH,fileEncoding ="cp932")
+Pati.df = read.csv(FILEPATH)
 Pati.df$rDRI <- factor(Pati.df$rDRI,levels=c("low","int","high","veryhigh"),ordered = FALSE) 
-Pati.df$rDRI <- as.numeric(Pati.df$rDRI)
+Pati.df$rDRI <- as.integer(Pati.df$rDRI)
 Pati.df$Fu.month.OS <- Pati.df$FollowUpDays.OS/30
 Pati.df$Fu.month.EFS <- Pati.df$FollowUpDays.EFS/30
 
