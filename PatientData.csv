@@ -1,0 +1,4 @@
+Age,PS,rDRI,HCT.CI,Condi.intensity,DonorSource,HLA8Allele.disp,TimeAlloTx,FollowUpDays.EFS,EFS.0live.1rel.2Death.3year,Event.EFS.3year,FollowUpDays.OS,Event.OS.3year
+39,3,veryhigh,6,MAC,CB,mismatched,1,60,1,1,80,1
+61,1,low,3,MAC,uBM,matched,1,1246,2,1,1246,1
+40,0,int,1,RIC,HaploPB,mismatched,2,3691,0,0,3691,0
