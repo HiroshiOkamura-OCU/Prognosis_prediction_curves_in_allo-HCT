@@ -22,7 +22,7 @@ Prognostic predictors;<br/>
 -HLA8Allele.disp: HLA disparity by DNA typing for HLA-A, HLA-B, HLA-C, and HLA-DR<br/> 
   factor; "matched" or "mismatched"<br/> 
 -TimeAlloTx: the number of allo-HCT<br/>
-  integer</p> 
+  integer; range: 1-3</p> 
 
 <p>Outcome;<br/> 
 -FollowUpDays.EFS: observed days until event (relapse or death) occurs or 3 years after allo-HCT is passed<br/> 
