@@ -14,7 +14,7 @@ Prognostic predictors;<br/>
 -rDRI: refined Disease Risk Index<br/>  
   factor; "low", "int", "high", or "veryhigh"<br/>  
 -HCT.CI: Hematopoietic Cell Transplantation Comorbidity Index<br/> 
-  integer; range: 0-9<br/> 
+  integer; range: 0-29<br/> 
 -Condi.intensity: the intensity of conditioning<br/> 
   factor; "MAC" or "RIC"<br/> 
 -DonorSource: donor source<br/> 
@@ -22,7 +22,7 @@ Prognostic predictors;<br/>
 -HLA8Allele.disp: HLA disparity by DNA typing for HLA-A, HLA-B, HLA-C, and HLA-DR<br/> 
   factor; "matched" or "mismatched"<br/> 
 -TimeAlloTx: the number of allo-HCT<br/>
-  integer; range: 0-5</p> 
+  integer</p> 
 
 <p>Outcome;<br/> 
 -FollowUpDays.EFS: observed days until event (relapse or death) occurs or 3 years after allo-HCT is passed<br/> 
