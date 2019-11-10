@@ -8,13 +8,13 @@
 <p>The column of "PatientData.csv"<br/> 
 Prognostic predictors;<br/> 
 -Age: recipent's age at allo-HCT<br/> 
-  integer<br/> 
+  integer; range: 16-70<br/>  
 -PS: performance status at allo-HCT<br/> 
-  integer; range: 0-4<br/> 
+  integer; range: 0-3<br/> 
 -rDRI: refined Disease Risk Index<br/>  
   factor; "low", "int", "high", or "veryhigh"<br/>  
 -HCT.CI: Hematopoietic Cell Transplantation Comorbidity Index<br/> 
-  integer; range: 0-29<br/> 
+  integer; range: 0-10<br/> 
 -Condi.intensity: the intensity of conditioning<br/> 
   factor; "MAC" or "RIC"<br/> 
 -DonorSource: donor source<br/> 
