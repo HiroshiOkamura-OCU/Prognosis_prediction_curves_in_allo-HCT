@@ -22,10 +22,10 @@ Prognostic predictors;<br/>
 -HLA8Allele.disp: HLA disparity by DNA typing for HLA-A, HLA-B, HLA-C, and HLA-DR<br/> 
   factor; "matched" or "mismatched"<br/> 
 -TimeAlloTx: the number of allo-HCT<br/>
-  integer; range: 1-3</p> 
+  integer; range: 1-3</p>
 
 <p>Outcome;<br/> 
--FollowUpDays.EFS: observed days until event (relapse or death) occurs or 3 years after allo-HCT is passed<br/> 
+-FollowUpDays.EFS: observed days until event (relapse or death) occurs or 3 years passes after allo-HCT <br/> 
   integer<br/> 
 -EFS.0live.1rel.2Death.3year: observed status at 3 years after allo-HCT <br/> 
   integer; censoring: 0, relapse: 1, death: 2<br/> 
@@ -35,3 +35,12 @@ Prognostic predictors;<br/>
   integer<br/> 
 -Event.OS.3year: observed status at 3 years after allo-HCT (censoring 0, death 1)<br/>
   integer; censoring: 0, death: 1</p> 
+
+<p>Abbreviation;<br/>
+  int: intermediate, MAC: myeloablative conditioning, RIC: reduced intensity conditioning, rBM: related bone marrow, rPB: related peripheral blood, uBM: unrelated bone marrow, CB: cord blood, HaploPB: haploidentical peripheral blood, HLA: human leukocyte antigen
+</p>
+
+<p>There are no "uPB (unrelated peripheral blood)" and "HaploBM (haploidentical bone marrow)" as donor source in this code.
+If you want to include them in this web application, you will have to modify this source code ("Prognosis_prediction_curves_in_alloHCT.R").
+</p>
+
