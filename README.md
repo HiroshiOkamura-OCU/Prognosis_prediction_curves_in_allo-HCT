@@ -36,11 +36,10 @@ Prognostic predictors;<br/>
 -Event.OS.3year: observed status at 3 years after allo-HCT (censoring 0, death 1)<br/>
   integer; censoring: 0, death: 1</p> 
 
-<p>Abbreviation;<br/>
-  int: intermediate, MAC: myeloablative conditioning, RIC: reduced intensity conditioning, rBM: related bone marrow, rPB: related peripheral blood, uBM: unrelated bone marrow, CB: cord blood, HaploPB: haploidentical peripheral blood, HLA: human leukocyte antigen
-</p>
-
 <p>There are no "uPB (unrelated peripheral blood)" and "HaploBM (haploidentical bone marrow)" as donor source in this code.
 If you want to include them in this web application, you will have to modify this source code ("Prognosis_prediction_curves_in_alloHCT.R").
 </p>
 
+<p>Abbreviation;<br/>
+  int: intermediate, MAC: myeloablative conditioning, RIC: reduced intensity conditioning, rBM: related bone marrow, rPB: related peripheral blood, uBM: unrelated bone marrow, CB: cord blood, HaploPB: haploidentical peripheral blood, HLA: human leukocyte antigen
+</p>
