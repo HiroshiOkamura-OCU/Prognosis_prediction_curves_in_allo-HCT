@@ -4,7 +4,7 @@
 "PatientData.csv" consists of patient data as a training cohort, but only column names and three patients' example data are inputted into it now.</p>
 
 # Usage
-<p>If each transplant institute or society input its past patient data into "PatientData.csv" and run "Prognosis_prediction_curves_in_alloHCT.R", the web application using the predictive model developed by its data will be available. Therefore, each transplant institute or society can plot the personalized prognosis prediction curves derived from its past patient data about a new allo-HCT candidate.</p>
+<p>If each transplant institute or society input its past patient data into "PatientData.csv" and run "Prognosis_prediction_curves_in_alloHCT.R", the web application using the predictive model developed by its data will be available. Therefore, each transplant institute or society can plot the personalized prognosis prediction curves about a new allo-HCT candidate derived from its past patient data .</p>
 
 #####To install and run:
 - Run the following commands in your R terminal/ environment.
