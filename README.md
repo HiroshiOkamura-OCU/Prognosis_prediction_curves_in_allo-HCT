@@ -16,6 +16,7 @@ install.packages(c('shiny','randomForestSRC'))
 - Clone this repository, and set your R working directory to the cloned repo's parent directory.
 - In R, run `runApp('Prognosis_prediction_curves_in_allo-HCT')`  to launch the app.</li>
 
+#####About "PatientData.csv":
 <p>The column of "PatientData.csv"<br/> 
 Prognostic predictors;<br/> 
 -Age: recipent's age at allo-HCT<br/> 
