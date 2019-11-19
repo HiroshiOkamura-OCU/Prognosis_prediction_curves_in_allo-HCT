@@ -6,8 +6,7 @@
 # Usage
 <p>If each transplant institute or society input its past patient data into "PatientData.csv" and run "Prognosis_prediction_curves_in_alloHCT.R", the web application using the predictive model developed by its data will be available. Therefore, each transplant institute or society can plot the personalized prognosis prediction curves derived from its past patient data about a new allo-HCT candidate.</p>
 
-<p>
-#####To install and Run:
+#####To install and run:
 - Run the following commands in your R terminal/ environment.
   
 ```
@@ -16,7 +15,6 @@ install.packages(c('shiny','randomForestSRC'))
 
 - Clone this repository, and set your R working directory to the cloned repo's parent directory.
 - In R, run `runApp('Prognosis_prediction_curves_in_allo-HCT')`  to launch the app.</li>
-</p>
 
 <p>The column of "PatientData.csv"<br/> 
 Prognostic predictors;<br/> 
