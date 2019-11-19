@@ -7,7 +7,7 @@
 <p>If each transplant institute or society input its past patient data into "PatientData.csv" and run "Prognosis_prediction_curves_in_alloHCT.R", the web application using the predictive model developed by its data will be available. Therefore, each transplant institute or society can plot the personalized prognosis prediction curves derived from its past patient data about a new allo-HCT candidate.</p>
 
 <p>
-  <u> To install and Run:</u> 
+#####To install and Run:
 - Run the following commands in your R terminal/ environment.
   
 ```
