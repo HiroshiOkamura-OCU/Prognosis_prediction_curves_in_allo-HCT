@@ -1,6 +1,5 @@
 library(shiny)
 library(randomForestSRC)
-library(survival)
 
 FILEPATH = "PatientData.csv"
 Pati.df = read.csv(FILEPATH)
