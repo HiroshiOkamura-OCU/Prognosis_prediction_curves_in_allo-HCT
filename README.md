@@ -36,7 +36,7 @@ install.packages(c('shiny','randomForestSRC'))
 -TimeAlloTx: the number of allo-HCT<br/>
   integer; range: 1-3</p>
 
-<p>Outcome;<br/> 
+<li>Outcome;</li>
 -FollowUpDays.EFS: observed days until event (relapse or death) occurs or 3 years passes after allo-HCT <br/> 
   integer<br/> 
 -EFS.0live.1rel.2Death.3year: observed status at 3 years after allo-HCT <br/> 
@@ -46,7 +46,8 @@ install.packages(c('shiny','randomForestSRC'))
 -FollowUpDays.OS: observed days until event (death) occurs or 3 years after allo-HCT is passed<br/>
   integer<br/> 
 -Event.OS.3year: observed status at 3 years after allo-HCT (censoring 0, death 1)<br/>
-  integer; censoring: 0, death: 1</p> 
+  integer; censoring: 0, death: 1
+ </p> 
 
 <p>There are no "uPB (unrelated peripheral blood)" and "HaploBM (haploidentical bone marrow)" as donor source in this code, because we have few uPB and HaploBM.
 If you want to include them in this web application, you will have to modify this source code ("Prognosis_prediction_curves_in_alloHCT.R").
