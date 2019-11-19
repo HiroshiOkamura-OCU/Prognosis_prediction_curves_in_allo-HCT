@@ -68,5 +68,5 @@ This application requires the following to run:
 </p>
 
 # License
-This application is licensed under the // license
+This application is licensed under the // license<br/> 
 © 2019, Hiroshi Okamura
