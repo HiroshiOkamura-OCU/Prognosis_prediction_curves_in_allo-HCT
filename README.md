@@ -43,3 +43,12 @@ If you want to include them in this web application, you will have to modify thi
 <p>Abbreviation;<br/>
   int: intermediate, MAC: myeloablative conditioning, RIC: reduced intensity conditioning, rBM: related bone marrow, rPB: related peripheral blood, uBM: unrelated bone marrow, CB: cord blood, HaploPB: haploidentical peripheral blood, HLA: human leukocyte antigen
 </p>
+
+# Requirements
+<p>
+  <li>R version: 3.5.1</li>
+</p>
+<p> package version
+  <li>shiny: ver. 1.3.2</li>
+  <li>randomForestSRC: ver. 2.8.0</li>
+</p>
