@@ -9,9 +9,9 @@
 <p>
   <u> To install and Run:</u> 
 <li>Run the following commands in your R terminal/ environment.</li>
-  <p style="background-color:#00FF00">
+<body bgcolor="#ff0000">
     install.packages(c('shiny','randomForestSRC'))
-  </p>
+</body>
 <li>Clone this repository, and set your R working directory to the cloned repo's parent directory.</li>
 <li>In R, run runApp('Prognosis_prediction_curves_in_allo-HCT') to launch the app.</li>
 </p>
