@@ -18,7 +18,7 @@ install.packages(c('shiny','randomForestSRC'))
 
 #####About "PatientData.csv":
 <p>The column of "PatientData.csv"<br/> 
-Prognostic predictors;<br/> 
+- Prognostic predictors;
 -Age: recipent's age at allo-HCT<br/> 
   integer; range: 16-70<br/>  
 -PS: performance status at allo-HCT<br/> 
