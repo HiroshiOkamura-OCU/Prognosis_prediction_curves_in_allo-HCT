@@ -3,6 +3,7 @@
 <p>"Prognosis_prediction_curves_in_alloHCT.R" is the source code to develop an interactive web application for plotting personalized prognosis prediction curves in allogeneic hematopoietic cell transplantation (allo-HCT).
 "PatientData.csv" consists of patient data as a training cohort, but only column names and three patients' example data are inputted into it now.</p>
 
+# Usage
 <p>If each transplant institute or society input its past patient data into "PatientData.csv" and run "Prognosis_prediction_curves_in_alloHCT.R", the web application using the predictive model developed by its data will be available. Therefore, each transplant institute or society can plot the personalized prognosis prediction curves derived from its past patient data about a new allo-HCT candidate.</p>
 
 <p>The column of "PatientData.csv"<br/> 
@@ -53,3 +54,7 @@ This application requires the following to run:
   <li>shiny: ver. 1.3.2</li>
   <li>randomForestSRC: ver. 2.8.0</li>
 </p>
+
+# License
+This application is licensed under the // license
+© 2019, Hiroshi Okamura
