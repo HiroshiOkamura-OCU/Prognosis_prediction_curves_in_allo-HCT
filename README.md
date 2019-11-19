@@ -45,6 +45,7 @@ If you want to include them in this web application, you will have to modify thi
 </p>
 
 # Requirements
+This application requires the following to run:
 <p>
   <li>R version: 3.5.1</li>
 </p>
