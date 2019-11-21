@@ -1,7 +1,7 @@
 library(shiny)
 library(randomForestSRC)
 
-FILEPATH = "PatientData.csv"
+FILEPATH = "Tramp_OS_EFS_for_app.csv"
 Pati.df = read.csv(FILEPATH)
 Pati.df$rDRI <- factor(Pati.df$rDRI,levels=c("low","int","high","veryhigh"),ordered = FALSE) 
 Pati.df$rDRI <- as.integer(Pati.df$rDRI)
@@ -108,7 +108,7 @@ ui = fluidPage(
                        max = 3,
                        value = 1)),
   column(8,plotOutput("distPlot")),
-  column(8,textOutput("OS_text"))
+  column(8,htmlOutput("OS_text"))
   )
 )
 
@@ -165,7 +165,7 @@ server = function(input, output) {
       
     })
     
-    output$OS_text <- renderText({
+    output$OS_text <- renderUI({
       # These functions return predictive OS and EFS rate of Patient:x at fu_month after allo-HCT
       search_predict_OSrate_fu_rfsrc <- function(x,fu_month){
         y <- which( predict(modelRFSRC.OS, x)$time.interest <= fu_month)
@@ -189,19 +189,59 @@ server = function(input, output) {
       }
       if(input$theme == "0"){ # display Predicted OS rate at 3years
         pred_3yOS = search_predict_OSrate_fu_rfsrc(patient1,36)
-        paste("Predicted 3-yeras OS rate is ", round(pred_3yOS*100, digits = 1) , " %")
+        c_index <- (1-modelRFSRC.OS$err.rate[length(modelRFSRC.OS$err.rate)])
+        div(
+          p(
+            class = "plane-paragraph",
+            paste("Predicted 3-yeras OS rate is ", round(pred_3yOS*100, digits = 1) , " %.")
+          ),
+          p(
+            class = "plane-paragraph",
+            paste("Harrell's c-index calculated using out-of-bag(OOB) data is", round(c_index, digits = 2), ".")
+          )
+        )
       }
       else if(input$theme == "1"){ # display Predicted PFS rate at 3years
         pred_3yEFS = search_predict_EFSrate_fu_rfsrc(patient1,36)
-        paste("Predicted 3-yeras PFS rate is ", round(pred_3yEFS*100, digits = 1) , " %")
+        c_index <- (1-modelRFSRC.EFS$err.rate[length(modelRFSRC.EFS$err.rate)])
+        div(
+          p(
+            class = "plane-paragraph",
+            paste("Predicted 3-yeras PFS rate is ", round(pred_3yEFS*100, digits = 1) , " %")
+          ),
+          p(
+            class = "plane-paragraph",
+            paste("Harrell's c-index calculated using out-of-bag(OOB) data is", round(c_index, digits = 2), ".")
+          )
+        )
       }
       else if(input$theme == "2"){ # display Predicted Relapse rate at 3years
         pred_3yRelapse = search_predict_Relapserate_fu_rfsrc(patient1,36)
-        paste("Predicted 3-yeras Relapse/Progression rate is ", round(pred_3yRelapse*100, digits = 1) , " %")
+        c_index <- (1-modelRFSRC.CI$err.rate[[length(modelRFSRC.CI$err.rate)/2,1]])
+        div(
+          p(
+            class = "plane-paragraph",
+            paste("Predicted 3-yeras Relapse/Progression rate is ", round(pred_3yRelapse*100, digits = 1) , " %")
+          ),
+          p(
+            class = "plane-paragraph",
+            paste("Harrell's c-index calculated using out-of-bag(OOB) data is", round(c_index, digits = 2), ".")
+          )
+        )
       }
       else if(input$theme == "3"){ # display Predicted NRM rate at 3years
         pred_3yNRM = search_predict_NRMrate_fu_rfsrc(patient1,36)
-        paste("Predicted 3-yeras NRM rate is ", round(pred_3yNRM*100, digits = 1) , " %")
+        c_index <- (1-modelRFSRC.CI$err.rate[[length(modelRFSRC.CI$err.rate)/2,2]])
+        div(
+          p(
+            class = "plane-paragraph",
+            paste("Predicted 3-yeras NRM rate is ", round(pred_3yNRM*100, digits = 1) , " %")
+          ),
+          p(
+            class = "plane-paragraph",
+            paste("Harrell's c-index calculated using out-of-bag(OOB) data is", round(c_index, digits = 2), ".")
+          )
+        )
       }
     })
   })
