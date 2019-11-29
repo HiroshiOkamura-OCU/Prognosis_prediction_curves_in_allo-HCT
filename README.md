@@ -37,15 +37,15 @@ install.packages(c('shiny','randomForestSRC'))
   integer; range: 1-3</p>
 
 <li>Outcome;</li>
--FollowUpDays.EFS: observed days until event (relapse or death) occurs or 3 years passes after allo-HCT <br/> 
+-FollowUpDays.EFS: observed days until event (relapse or death) occurs or 1 year passes after allo-HCT <br/> 
   integer<br/> 
--EFS.0live.1rel.2Death.3year: observed status at 3 years after allo-HCT <br/> 
+-EFS.0live.1rel.2death.1year: observed status at 1 year after allo-HCT <br/> 
   integer; censoring: 0, relapse: 1, death: 2<br/> 
--Event.EFS.3year: observed status at 3 years after allo-HCT<br/> 
+-Event.EFS.1year: observed status at 1 year after allo-HCT<br/> 
   integer; censoring: 0, relapse: 1, death: 1<br/>
--FollowUpDays.OS: observed days until event (death) occurs or 3 years after allo-HCT is passed<br/>
+-FollowUpDays.OS: observed days until event (death) occurs or 1 year after allo-HCT is passed<br/>
   integer<br/> 
--Event.OS.3year: observed status at 3 years after allo-HCT (censoring 0, death 1)<br/>
+-Event.OS.1year: observed status at 1 year after allo-HCT (censoring 0, death 1)<br/>
   integer; censoring: 0, death: 1
  </p> 
 
