@@ -17,7 +17,8 @@ install.packages(c('shiny','randomForestSRC'))
 - In R, run `runApp('Prognosis_prediction_curves_in_allo-HCT')`  to launch the app.</li>
 
 #####About "PatientData.csv":
-<p>The column of "PatientData.csv"<br/> 
+<p>The column of "PatientData.csv"<br/>
+-Pt.ID: Unique patient identifier
 <li>Prognostic predictors;</li>
 -Age: recipent's age at allo-HCT<br/> 
   integer; range: 16-70<br/>  
