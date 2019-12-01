@@ -14,7 +14,8 @@ install.packages(c('shiny','randomForestSRC'))
 ```
 
 - Clone this repository, and set your R working directory to the cloned repo's parent directory.
-- In R, run `runApp('Prognosis_prediction_curves_in_allo-HCT')`  to launch the app.</li>
+- In R, run `library(shiny)`
+- And run `shiny::runApp('Prognosis_prediction_curves_in_allo-HCT')`  to launch the app.</li>
 
 #####About "PatientData.csv":
 <p>The column of "PatientData.csv"<br/>
