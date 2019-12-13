@@ -17,6 +17,11 @@ install.packages(c('shiny','randomForestSRC'))
 - In R, run `library(shiny)`
 - And run `shiny::runApp('Prognosis_prediction_curves_in_allo-HCT')`  to launch the app.</li>
 
+#####Assessment of predictive performance:
+- In R, run `source('Find_mtry_and_Culc_AUC_per_month.R')`
+<p> 
+ The entire cohort in "PatientData.csv" was split into a training cohort (70%) and test cohort (30%) in the order of "Pt.ID". The optimal number of variables randomly selected as candidates for splitting a node, which is a hyperparameter in the RSF model, for each outcome was tuned using 5-fold cross-validation method in the training cohort. It was defined as the one with the highest AUC value. Finally, the predictive performances of the RSF, Cox PH model, DRI-R, and HCT-CI for 1-year OS and PFS, and of RSF, DRI-R, and HCT-CI for 1-year relapse/progression and NRM is assessed in test cohort.</p>
+
 #####About "PatientData.csv":
 <p>The column of "PatientData.csv"<br/>
 -Pt.ID: Unique patient identifier
