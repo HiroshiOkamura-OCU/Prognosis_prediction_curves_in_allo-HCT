@@ -61,7 +61,7 @@ install.packages(c('tidyverse','timeROC','cvTools'))
  </p> 
 
 <p>There are no "uPB (unrelated peripheral blood)" and "HaploBM (haploidentical bone marrow)" as donor source in this code, because we had few uPB and HaploBM.
-If you want to include them in this web application, you will have to modify this source code ("Prognosis_prediction_curves_in_alloHCT.R").
+If you want to include them in this web application, you will need to modify this source code ("Prognosis_prediction_curves_in_alloHCT.R"). Please contact us, if you needs any support.
 </p>
 
 <p>Abbreviation;<br/>
